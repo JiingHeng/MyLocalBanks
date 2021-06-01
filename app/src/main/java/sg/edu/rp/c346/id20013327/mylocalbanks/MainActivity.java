@@ -101,8 +101,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
             startActivity(intent);
         } else if (item.getItemId() == 1) {
-            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + contact));
-            startActivity(intent);
+            Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + contact));
+            startActivity(intentCall);
         }
 
         return super.onContextItemSelected(item);
